@@ -1,5 +1,6 @@
 // import React from 'react';
 import logo from "./logo.png"
+import { useRouter } from "next/router";
 import Link from "next/link";
 const Navbar = () => {
     return (
@@ -8,10 +9,10 @@ const Navbar = () => {
             <div className="hidden md:block pt-3 ">
                 <ul className="outline-none  flex gap-12 pr-20 ">
 
-                    <li className="hover:bg-amber-500 rounded-sm"><Link href={""}>Home</Link></li>
-                    <li className="hover:bg-amber-500 rounded-sm"><Link href={""}>About</Link></li>
-                    <li className="hover:bg-amber-500 rounded-sm"><Link href={"#"}>Product</Link></li>
-                    <li className="hover:bg-amber-500 rounded-sm"><Link href={"#"}>Contact</Link></li>
+                    <li ><Link href={"/"}>Home</Link></li>
+                    <li><Link  href={"/About"}>About</Link></li>
+                    <li><Link  href={"/Products"}>Product</Link></li>
+                    <li><Link  href={"/"}>Contact</Link></li>
                 </ul>
                            </div>
                            <div className="md:hidden">

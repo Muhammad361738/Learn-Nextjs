@@ -1,12 +1,14 @@
-import React from 'react';
+import Image from "next/image";
+import bgc2 from "../Assests/bgc.jpg"
 
 const Hero = () => {
     return (
         <div >
           <br />
           <br />
-            <div>
-                  <img className="h-screen w-full  outline-none" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDJ2-YyMtF6lugKMlPiNhWTstl6nbmL94Dmw&s" alt="" />
+            <div className=''>
+                  {/* <Image className="h-screen w-full " src={bgc2} alt="" /> */}
+                  <Image className="h-screen w-full" src={bgc2} alt="" />
                 
                   </div>
         </div>
